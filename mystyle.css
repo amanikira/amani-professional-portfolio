@@ -1,0 +1,285 @@
+:root {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-primary: #b6b6b6;
+    text-secondary: #ececec;
+}
+
+
+header {
+    background-color:hsla(0, 0%, 0%, 0.42);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    background-color: background-color: hsla(0, 0%, 0%, 0.72);
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+}
+
+header .title {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 1em;
+    display: inline;
+  }
+
+body {
+    background: gray;
+    background-image: url('moeidlarge.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1 fr 2fr;
+}
+
+h2 {
+    color: whitesmoke;
+}
+.profilepic {
+    align-items: center;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 275px;
+    position: absolute;
+    margin-top: 60px;
+    hsla(300, 100%, 40%, 0.21)
+
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+    background-color:hsla(300, 100%, 40%, 0.21)
+    
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+
+.sidebar {
+    background-color:hsla(0, 0%, 0%, 0.27) ;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: #fff;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.profilepic {
+    width: 200px;
+    height: auto;
+    align-self: center;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.aboutme {
+    width: 220px;
+    height: 180px;
+    color: whitesmoke;
+    background-color: hsla(0, 0%, 0%, 0.27);
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 60px;
+    margin-top: 10px;
+}
+
+#aboutme {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#work {
+    background-color:hsla(0, 0%, 0%, 0.27) ;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: #fff;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+#contact {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+form {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black
+}
+
+footer {
+    width: 500px;
+    align-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: hsla(295, 25%, 42%, 0.81);
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: purple;
+}
+
+footer {
+        background-color:hsla(0, 0%, 0%, 0.42);
+        color: #fff;
+        border: 1px solid #ddd;
+
+    }
+}
+
+@media (max-width: 750px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        
+    }
+  }
+
+@media (max-width: 700px) {
+    header {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .sidebar {
+        max-width: 100px;
+        max-height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 750px) {
+    .profilepic {
+        max-width: 100px;
+        max-height: 200px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    header {
+        font-size: 0.7rem;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 750px) {
+    .aboutme {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 750px) {
+     #grid{
+       display: flex;
+       margin-top: 10px;
+       font-size: 0.8rem;  
+    }
+}
+
+@media (max-width: 490px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 430px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 420px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 490px) {
+    header .title {
+        font-size: small;
+    }
+  }
+
